@@ -1,0 +1,31 @@
+version: 0.0
+os: linux
+files:
+  - source: /moderntacoshop_trackorder.service
+    destination: /etc/systemd/system
+  - source: /
+    destination: /home/moderntacoshop.trackorder.server/app
+permissions:
+  - object: /home/moderntacoshop.trackorder.server/app
+    pattern: "**"
+    except: ["*.sh", ModernTacoShop.TrackOrder.Server, "*.service"]
+    mode: 666
+    type:
+      - file
+  - object: /home/moderntacoshop.trackorder.server/app
+    pattern: "*.sh"
+    mode: 777
+    type:
+      - file
+  - object: /home/moderntacoshop.trackorder.server/app
+    pattern: ModernTacoShop.TrackOrder.Server
+    mode: 777
+    type:
+      - file
+hooks:
+  ApplicationStop:
+    - location: ApplicationStop.sh
+      runas: root
+  ApplicationStart:
+    - location: ApplicationStart.sh
+      runas: root

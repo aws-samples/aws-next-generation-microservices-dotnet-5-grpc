@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package modern_taco_shop;
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/struct.proto";
+import "google/protobuf/timestamp.proto";
+
+option csharp_namespace = "ModernTacoShop.TrackOrder.Protos";
+
+service TrackOrder {
+  rpc StartTrackingOrder (Order) returns (google.protobuf.Empty);
+  rpc GetOrderStatus (OrderId) returns (stream Order);
+  rpc HealthCheck (google.protobuf.Empty) returns (google.protobuf.Empty);
+}
+
+message Point {
+  string latitude = 1;
+  string longitude = 2;
+}
+
+message NullablePoint {
+	oneof data {
+		google.protobuf.NullValue null = 1;
+		Point point = 2;
+    }
+}
+
+message OrderId {
+	int64 id = 1;
+}
+
+message Order {
+  int64 order_id = 1;
+  google.protobuf.Timestamp order_placed = 2;
+  google.protobuf.Timestamp last_updated = 3;
+  NullablePoint last_updated_position = 4;
+  OrderStatus order_status = 5;
+  string order_json = 6;
+}
+
+enum OrderStatus {
+  PLACED = 0;
+  PREPARING = 1;
+  IN_TRANSIT = 2;
+  DELIVERED = 3;
+  CANCELLED = 4;
+  DELIVERY_ERROR = 5;
+}

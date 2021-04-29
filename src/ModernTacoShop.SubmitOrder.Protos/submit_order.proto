@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package modern_taco_shop;
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/struct.proto";
+import "google/protobuf/timestamp.proto";
+
+option csharp_namespace = "ModernTacoShop.SubmitOrder.Protos";
+
+service SubmitOrder {
+  rpc SubmitOrder (Order) returns (google.protobuf.Empty);
+  rpc HealthCheck (google.protobuf.Empty) returns (google.protobuf.Empty);
+}
+
+message Order {
+  int64 order_id = 1;
+  string order_json = 6;
+}

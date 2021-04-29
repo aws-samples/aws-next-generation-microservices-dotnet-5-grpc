@@ -1,0 +1,31 @@
+version: 0.0
+os: linux
+files:
+  - source: /moderntacoshop_submitorder.service
+    destination: /etc/systemd/system
+  - source: /
+    destination: /home/moderntacoshop.submitorder.server/app
+permissions:
+  - object: /home/moderntacoshop.submitorder.server/app
+    pattern: "**"
+    except: ["*.sh", ModernTacoShop.SubmitOrder.Server, "*.service"]
+    mode: 666
+    type:
+      - file
+  - object: /home/moderntacoshop.submitorder.server/app
+    pattern: "*.sh"
+    mode: 777
+    type:
+      - file
+  - object: /home/moderntacoshop.submitorder.server/app
+    pattern: ModernTacoShop.SubmitOrder.Server
+    mode: 777
+    type:
+      - file
+hooks:
+  ApplicationStop:
+    - location: ApplicationStop.sh
+      runas: root
+  ApplicationStart:
+    - location: ApplicationStart.sh
+      runas: root
