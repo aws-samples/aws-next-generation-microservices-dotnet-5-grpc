@@ -259,3 +259,4 @@ yarn-error.log*
 
 # Un-ignore the CDK bin directory.
 !**/cdk/bin
+src/ModernTacoShop.TrackOrder.Server/aws-logger-errors.txt
