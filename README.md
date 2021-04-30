@@ -1,11 +1,10 @@
-## My Project
+# Build Next-Generation Microservices with .NET 5 and gRPC on AWS
 
-TODO: Fill this README out!
+## Summary
 
-Be sure to:
+This repo content sample code to set up an example .NET 5 gRPC microservices application on AWS.
 
-* Change the title in this README
-* Edit your repository description on GitHub
+[Click here learn more]("https://TODO_BLOG_LINK.COM") to learn how to deploy and test this sources code.
 
 ## Security
 
