@@ -3,17 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.808.2
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernTacoShop.TrackOrder.Protos", "ModernTacoShop.TrackOrder.Protos\ModernTacoShop.TrackOrder.Protos.csproj", "{8DC26956-F482-4D78-B59A-D02C88A5D728}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModernTacoShop.TrackOrder.Protos", "ModernTacoShop.TrackOrder.Protos\ModernTacoShop.TrackOrder.Protos.csproj", "{8DC26956-F482-4D78-B59A-D02C88A5D728}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernTacoShop.TrackOrder.Server", "ModernTacoShop.TrackOrder.Server\ModernTacoShop.TrackOrder.Server.csproj", "{A809014C-8891-4C00-BB4F-1FC94C503337}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModernTacoShop.TrackOrder.Server", "ModernTacoShop.TrackOrder.Server\ModernTacoShop.TrackOrder.Server.csproj", "{A809014C-8891-4C00-BB4F-1FC94C503337}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernTacoShop.SubmitOrder.Protos", "ModernTacoShop.SubmitOrder.Protos\ModernTacoShop.SubmitOrder.Protos.csproj", "{D1CFBA03-CC39-4281-AA8C-7D6763EEB393}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModernTacoShop.SubmitOrder.Protos", "ModernTacoShop.SubmitOrder.Protos\ModernTacoShop.SubmitOrder.Protos.csproj", "{D1CFBA03-CC39-4281-AA8C-7D6763EEB393}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernTacoShop.SubmitOrder.Server", "ModernTacoShop.SubmitOrder.Server\ModernTacoShop.SubmitOrder.Server.csproj", "{C19BB879-BA91-4B5E-AADC-B0742D58DECE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModernTacoShop.SubmitOrder.Server", "ModernTacoShop.SubmitOrder.Server\ModernTacoShop.SubmitOrder.Server.csproj", "{C19BB879-BA91-4B5E-AADC-B0742D58DECE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernTacoShop.SubmitOrder.Server.Test", "ModernTacoShop.SubmitOrder.Server.Test\ModernTacoShop.SubmitOrder.Server.Test.csproj", "{709E9C5F-5A8E-4B69-A6B4-8DA8F969B0E4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernTacoShop.WebApp", "front-end\ModernTacoShop.WebApp\ModernTacoShop.WebApp\ModernTacoShop.WebApp.csproj", "{53227D4F-0F4C-4295-BA14-444A81CDB9FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModernTacoShop.SubmitOrder.Server.Test", "ModernTacoShop.SubmitOrder.Server.Test\ModernTacoShop.SubmitOrder.Server.Test.csproj", "{709E9C5F-5A8E-4B69-A6B4-8DA8F969B0E4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernTacoShop.AndroidApp", "ModernTacoShop.AndroidApp\ModernTacoShop.AndroidApp.csproj", "{05C6EE0C-FC09-4AA3-BDDF-63E972EF72A4}"
 EndProject
@@ -43,10 +41,6 @@ Global
 		{709E9C5F-5A8E-4B69-A6B4-8DA8F969B0E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{709E9C5F-5A8E-4B69-A6B4-8DA8F969B0E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{709E9C5F-5A8E-4B69-A6B4-8DA8F969B0E4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{53227D4F-0F4C-4295-BA14-444A81CDB9FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{53227D4F-0F4C-4295-BA14-444A81CDB9FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{53227D4F-0F4C-4295-BA14-444A81CDB9FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{53227D4F-0F4C-4295-BA14-444A81CDB9FE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{05C6EE0C-FC09-4AA3-BDDF-63E972EF72A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{05C6EE0C-FC09-4AA3-BDDF-63E972EF72A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05C6EE0C-FC09-4AA3-BDDF-63E972EF72A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,9 +51,5 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4F56419F-D274-4C6D-9D86-8C9F15767D85}
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{8DC26956-F482-4D78-B59A-D02C88A5D728} = {C0C38FF1-0AE6-4B98-8436-C28CFDF4447F}
-		{A809014C-8891-4C00-BB4F-1FC94C503337} = {C0C38FF1-0AE6-4B98-8436-C28CFDF4447F}
 	EndGlobalSection
 EndGlobal
