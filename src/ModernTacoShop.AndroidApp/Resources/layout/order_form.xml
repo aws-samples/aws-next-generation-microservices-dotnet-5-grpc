@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:p4="http://xamarin.com/mono/android/designer"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior">
+	<TableLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="10"
+		android:stretchColumns="0"
+		android:id="@+id/tableLayout1">
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/beefTacoRow">
+			<TextView
+				android:text="Beef Taco"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+			<TextView
+				android:id="@+id/beefTacoCountLabel"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_marginRight="10px"/>
+			<Button
+				android:text="+"
+				android:id="@+id/addBeefTacoButton"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:onClick=""/>
+			<Button
+				android:text="-"
+				android:id="@+id/subtractBeefTacoButton"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:enabled="false"/>
+		</TableRow>
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/carnitasTacoRow">
+			<TextView
+				android:text="Carnitas Taco"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+			<TextView
+				android:id="@+id/carnitasTacoCountLabel"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_marginRight="10px"/>
+			<Button
+				android:text="+"
+				android:id="@+id/addCarnitasTacoButton"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:onClick=""/>
+			<Button
+				android:text="-"
+				android:id="@+id/subtractCarnitasTacoButton"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:enabled="false"/>
+		</TableRow>
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/chickenTacoRow">
+			<TextView
+				android:text="Chicken Taco"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+			<TextView
+				android:id="@+id/chickenTacoCountLabel"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_marginRight="10px"/>
+			<Button
+				android:text="+"
+				android:id="@+id/addChickenTacoButton"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:onClick=""/>
+			<Button
+				android:text="-"
+				android:id="@+id/subtractChickenTacoButton"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:enabled="false"/>
+		</TableRow>
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/shrimpTacoRow">
+			<TextView
+				android:text="Shrimp Taco"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+			<TextView
+				android:id="@+id/shrimpTacoCountLabel"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_marginRight="10px"/>
+			<Button
+				android:text="+"
+				android:id="@+id/addShrimpTacoButton"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:onClick=""/>
+			<Button
+				android:text="-"
+				android:id="@+id/subtractShrimpTacoButton"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:enabled="false"/>
+		</TableRow>
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/tofuTacoRow">
+			<TextView
+				android:text="Tofu Taco (V)"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+			<TextView
+				android:id="@+id/tofuTacoCountLabel"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_marginRight="10px"/>
+			<Button
+				android:text="+"
+				android:id="@+id/addTofuTacoButton"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:onClick=""/>
+			<Button
+				android:text="-"
+				android:id="@+id/subtractTofuTacoButton"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:enabled="false"/>
+		</TableRow>
+	</TableLayout>
+	<Button
+		android:text="Submit Order"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="0"
+		android:enabled="false"
+		android:id="@+id/submitOrderButton" />
+</LinearLayout>

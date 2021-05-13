@@ -1,0 +1,156 @@
+{
+  "vpc-provider:account=064932315334:filter.tag:Name=gRpcTacoShop-RootStack/vpc:region=us-east-2:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-015628a117494443e",
+    "vpcCidrBlock": "192.168.101.0/24",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Private",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-09c944b225fb2eea4",
+            "cidr": "192.168.101.128/26",
+            "availabilityZone": "us-east-2a",
+            "routeTableId": "rtb-099ac4cc42be00b3b"
+          },
+          {
+            "subnetId": "subnet-0b90240051d486adf",
+            "cidr": "192.168.101.192/26",
+            "availabilityZone": "us-east-2b",
+            "routeTableId": "rtb-0375ad36e5e7378c5"
+          }
+        ]
+      },
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-09d0f1515ef7ce002",
+            "cidr": "192.168.101.0/26",
+            "availabilityZone": "us-east-2a",
+            "routeTableId": "rtb-02b6a0ad72360532b"
+          },
+          {
+            "subnetId": "subnet-01667fac139be2a33",
+            "cidr": "192.168.101.64/26",
+            "availabilityZone": "us-east-2b",
+            "routeTableId": "rtb-0c2114b22a890fe14"
+          }
+        ]
+      }
+    ]
+  },
+  "ami:account=064932315334:filters.image-type.0=machine:filters.name.0=ubuntu/images/hvm-ssd/ubuntu-focal-20.04-arm64-server-20201026:filters.state.0=available:region=us-east-2": "ami-0742a572c2ce45ebf",
+  "vpc-provider:account=064932315334:filter.tag:Name=ModernTacos-RootStack/vpc:region=us-east-2:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-04b8677fd7861218a",
+    "vpcCidrBlock": "192.168.123.0/24",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-0f832e8382e2e5e5a",
+            "cidr": "192.168.123.0/27",
+            "availabilityZone": "us-east-2a",
+            "routeTableId": "rtb-0b308610b5505156d"
+          },
+          {
+            "subnetId": "subnet-0cf09ef1821d80b3c",
+            "cidr": "192.168.123.32/27",
+            "availabilityZone": "us-east-2b",
+            "routeTableId": "rtb-0a33f449684f4dfe3"
+          },
+          {
+            "subnetId": "subnet-097b1fd1b05724d64",
+            "cidr": "192.168.123.64/27",
+            "availabilityZone": "us-east-2c",
+            "routeTableId": "rtb-041bb1c7b9de0e1e5"
+          }
+        ]
+      },
+      {
+        "name": "Private",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-046c50dd7d32ea2fc",
+            "cidr": "192.168.123.96/27",
+            "availabilityZone": "us-east-2a",
+            "routeTableId": "rtb-0eec9540c0984da1c"
+          },
+          {
+            "subnetId": "subnet-02bcfa64efd343ae4",
+            "cidr": "192.168.123.128/27",
+            "availabilityZone": "us-east-2b",
+            "routeTableId": "rtb-01f70e498779188d1"
+          },
+          {
+            "subnetId": "subnet-01b9db7a8bf20fb1e",
+            "cidr": "192.168.123.160/27",
+            "availabilityZone": "us-east-2c",
+            "routeTableId": "rtb-0194d494cafdb6899"
+          }
+        ]
+      }
+    ]
+  },
+  "vpc-provider:account=064932315334:filter.tag:Name=ModernTacoShop-RootStack/vpc:region=us-east-2:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-00ee17576d3cfccf2",
+    "vpcCidrBlock": "192.168.123.0/24",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Private",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-0648ee3144f7f432c",
+            "cidr": "192.168.123.96/27",
+            "availabilityZone": "us-east-2a",
+            "routeTableId": "rtb-0bc1bb2c4a562fdaa"
+          },
+          {
+            "subnetId": "subnet-016aace60aadc40d2",
+            "cidr": "192.168.123.128/27",
+            "availabilityZone": "us-east-2b",
+            "routeTableId": "rtb-03763bb9d86aea089"
+          },
+          {
+            "subnetId": "subnet-061dc8cdf4af33bbd",
+            "cidr": "192.168.123.160/27",
+            "availabilityZone": "us-east-2c",
+            "routeTableId": "rtb-001581b0e00510fee"
+          }
+        ]
+      },
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-0a0607a428f9b7007",
+            "cidr": "192.168.123.0/27",
+            "availabilityZone": "us-east-2a",
+            "routeTableId": "rtb-098fe24f10c4b585b"
+          },
+          {
+            "subnetId": "subnet-0839dac4ba4b4e8d7",
+            "cidr": "192.168.123.32/27",
+            "availabilityZone": "us-east-2b",
+            "routeTableId": "rtb-0a3186e220c78d65d"
+          },
+          {
+            "subnetId": "subnet-08c6dea545b55297b",
+            "cidr": "192.168.123.64/27",
+            "availabilityZone": "us-east-2c",
+            "routeTableId": "rtb-09891f667446e3f5b"
+          }
+        ]
+      }
+    ]
+  }
+}
