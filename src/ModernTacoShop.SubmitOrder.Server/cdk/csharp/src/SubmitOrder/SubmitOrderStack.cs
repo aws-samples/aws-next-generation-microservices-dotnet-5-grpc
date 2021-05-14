@@ -18,12 +18,6 @@ namespace SubmitOrder
     {
         internal SubmitOrderStack(Construct scope, string id, IStackProps props = null) : base(scope, id, props)
         {
-            var keyPairName = new Amazon.CDK.CfnParameter(this, "keyPairName", new Amazon.CDK.CfnParameterProps
-            {
-                Type = "String",
-                Description = "The name of the EC2 keypair associated with the Windows Server instance."
-            });
-
             // Look up the VPC from another stack.
             var vpc = Vpc.FromLookup(this, "ModernTacoShop-VPC", new VpcLookupOptions
             {
@@ -126,7 +120,7 @@ namespace SubmitOrder
                 {
                     Subnets = vpc.PrivateSubnets
                 },
-                KeyName = keyPairName.ValueAsString,
+                KeyName = "modern-taco-shop-keypair",
                 UpdatePolicy = UpdatePolicy.RollingUpdate(new RollingUpdateOptions
                 {
                     MinInstancesInService = 0
