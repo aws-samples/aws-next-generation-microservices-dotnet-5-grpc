@@ -120,7 +120,6 @@ namespace TrackOrder
                 {
                     Subnets = vpc.PrivateSubnets
                 },
-                KeyName = "modern-taco-shop-keypair",
                 UpdatePolicy = UpdatePolicy.RollingUpdate(new RollingUpdateOptions
                 {
                     MinInstancesInService = 0

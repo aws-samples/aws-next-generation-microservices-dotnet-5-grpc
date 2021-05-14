@@ -115,7 +115,6 @@ export class TrackOrderServiceStack extends cdk.Stack {
             userData: ec2.UserData.forLinux(),
             role: trackOrderMicroserviceRole,
             vpcSubnets: { subnets: vpc.privateSubnets },
-            keyName: 'modern-taco-shop-keypair',
             updatePolicy: autoscaling.UpdatePolicy.rollingUpdate({ minInstancesInService: 0 }),
             healthCheck: autoscaling.HealthCheck.ec2()
         });

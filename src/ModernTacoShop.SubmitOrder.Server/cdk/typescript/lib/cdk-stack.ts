@@ -98,7 +98,6 @@ export class SubmitOrderServiceStack extends cdk.Stack {
             userData: ec2.UserData.forLinux(),
             role: submitOrderMicroserviceRole,
             vpcSubnets: { subnets: vpc.privateSubnets },
-            keyName: 'modern-taco-shop-keypair',
             updatePolicy: autoscaling.UpdatePolicy.rollingUpdate({ minInstancesInService: 0 }),
             healthCheck: autoscaling.HealthCheck.elb({ grace: cdk.Duration.seconds(120) }),
         });
