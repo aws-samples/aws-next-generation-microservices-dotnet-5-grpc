@@ -25,16 +25,14 @@ namespace ModernTacoShop.SubmitOrder.Protos {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChJzdWJtaXRfb3JkZXIucHJvdG8SEG1vZGVybl90YWNvX3Nob3AaG2dvb2ds",
-            "ZS9wcm90b2J1Zi9lbXB0eS5wcm90bxocZ29vZ2xlL3Byb3RvYnVmL3N0cnVj",
-            "dC5wcm90bxofZ29vZ2xlL3Byb3RvYnVmL3RpbWVzdGFtcC5wcm90byItCgVP",
-            "cmRlchIQCghvcmRlcl9pZBgBIAEoAxISCgpvcmRlcl9qc29uGAYgASgJMowB",
-            "CgtTdWJtaXRPcmRlchI+CgtTdWJtaXRPcmRlchIXLm1vZGVybl90YWNvX3No",
-            "b3AuT3JkZXIaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSPQoLSGVhbHRoQ2hl",
-            "Y2sSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaFi5nb29nbGUucHJvdG9idWYu",
-            "RW1wdHlCJKoCIU1vZGVyblRhY29TaG9wLlN1Ym1pdE9yZGVyLlByb3Rvc2IG",
-            "cHJvdG8z"));
+            "ZS9wcm90b2J1Zi9lbXB0eS5wcm90byItCgVPcmRlchIQCghvcmRlcl9pZBgB",
+            "IAEoAxISCgpvcmRlcl9qc29uGAYgASgJMowBCgtTdWJtaXRPcmRlchI+CgtT",
+            "dWJtaXRPcmRlchIXLm1vZGVybl90YWNvX3Nob3AuT3JkZXIaFi5nb29nbGUu",
+            "cHJvdG9idWYuRW1wdHkSPQoLSGVhbHRoQ2hlY2sSFi5nb29nbGUucHJvdG9i",
+            "dWYuRW1wdHkaFi5nb29nbGUucHJvdG9idWYuRW1wdHlCJKoCIU1vZGVyblRh",
+            "Y29TaG9wLlN1Ym1pdE9yZGVyLlByb3Rvc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::ModernTacoShop.SubmitOrder.Protos.Order), global::ModernTacoShop.SubmitOrder.Protos.Order.Parser, new[]{ "OrderId", "OrderJson" }, null, null, null, null)
           }));
