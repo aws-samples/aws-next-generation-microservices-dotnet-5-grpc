@@ -50,7 +50,7 @@ export class ModernTacoShopStack extends cdk.Stack {
 
 
     // Create the Route 53 hosted zone.
-    const hostedZone = new route53.PublicHostedZone(this, 'HostedZone', {
+    const hostedZone = new route53.PublicHostedZone(this, 'ModernTacoShop-HostedZone', {
       zoneName: domainNameParameter.valueAsString
     });
 
