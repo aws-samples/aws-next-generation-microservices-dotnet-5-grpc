@@ -17,4 +17,7 @@
     <PackageReference Include="Amazon.Jsii.Analyzers" Version="*" PrivateAssets="all" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove=".DS_Store" />
+  </ItemGroup>
 </Project>
