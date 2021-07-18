@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package modern_taco_shop;
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
+
+option csharp_namespace = "ModernTacoShop.SubmitOrder.Protos";
+
+service SubmitOrder {
+  rpc SubmitOrder (Order) returns (google.protobuf.Empty);
+  rpc HealthCheck (google.protobuf.Empty) returns (google.protobuf.Empty);
+}
+
+message Order {
+  int64 order_id = 1;
+  uint32 taco_count_beef = 2;
+  uint32 taco_count_carnitas = 3;
+  uint32 taco_count_chicken = 4;
+  uint32 taco_count_shrimp = 5;
+  uint32 taco_count_tofu = 6;
+
+  google.protobuf.Timestamp placed_on = 20;
+
+  string comments = 30;
+}

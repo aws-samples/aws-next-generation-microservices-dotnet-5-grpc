@@ -1,0 +1,12 @@
+[Unit]
+Description=Modern Taco Shop - Submit Order Service
+
+[Service]
+WorkingDirectory=/home/moderntacoshop.submitorder.server/app
+ExecStart=/home/moderntacoshop.submitorder.server/app/SubmitOrder
+SyslogIdentifier=ModernTacoShop.SubmitOrder.Server
+User=ubuntu
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target

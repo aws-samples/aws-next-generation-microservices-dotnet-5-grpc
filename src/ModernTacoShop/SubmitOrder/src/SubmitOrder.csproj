@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(RunConfiguration)' == 'ModernTacoShop.SubmitOrder.Server' " />
+	<ItemGroup>
+		<Protobuf Include="..\..\Proto\submit_order.proto" GrpcServices="Server" Link="Protos\submit_order.proto" />
+		<Protobuf Include="..\..\Proto\track_order.proto" GrpcServices="Client" Link="Protos\track_order.proto" />
+		<PackageReference Include="Grpc.AspNetCore" Version="2.38.0" />
+		<PackageReference Include="AWS.Logger.AspNetCore" Version="3.2.0" />
+		<PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.0.44" />
+		<PackageReference Include="Grpc.AspNetCore.Server.Reflection" Version="2.38.0" />
+		<PackageReference Include="AWSSDK.SimpleSystemsManagement" Version="3.7.4.1" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Remove="AWS.Logger.AspNetCore" />
+		<None Remove="AWSSDK.DynamoDBv2" />
+		<None Remove="Grpc.AspNetCore.Server.Reflection" />
+		<None Remove="Services\" />
+		<None Remove="AWSSDK.SimpleSystemsManagement" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Services\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Update="moderntacoshop_submitorder.service">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="appspec.yml">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="ApplicationStart.sh">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="ApplicationStop.sh">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+	<Target Name="ZipOutputPath" AfterTargets="Publish">
+		<ZipDirectory SourceDirectory="$(OutputPath)/publish" DestinationFile="$(MSBuildProjectDirectory)\bin\$(MSBuildProjectName).zip" Overwrite="true" />
+	</Target>
+</Project>
