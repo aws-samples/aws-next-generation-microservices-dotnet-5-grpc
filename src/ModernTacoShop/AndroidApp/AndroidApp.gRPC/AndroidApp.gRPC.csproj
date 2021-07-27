@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Grpc.Tools" />
+    <None Remove="Grpc.Core" />
+    <None Remove="Google.Protobuf" />
+    <None Remove="Grpc.Core.Xamarin" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Grpc.Tools" Version="2.38.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Google.Protobuf" Version="3.17.3" />
+    <PackageReference Include="Grpc.Core.Xamarin" Version="2.38.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Protobuf Include="..\..\Proto\submit_order.proto" GrpcServices="Client" Link="Protos\submit_order.proto" />
+    <Protobuf Include="..\..\Proto\track_order.proto" GrpcServices="Client" Link="Protos\track_order.proto" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="app_name">ModernTacos</string>
+	<string name="action_settings">Settings</string>
+	<string name="order__label_domain_name">Domain Name</string>
+	<string name="order__label_beef_tacos">Beef Tacos</string>
+	<string name="order__label_carnitas_tacos">Carnitas Tacos</string>
+	<string name="order__label_chicken_tacos">Chicken Tacos</string>
+	<string name="order__label_shrimp_tacos">Shrimp Tacos</string>
+	<string name="order__label_tofu_tacos">Tofu Tacos</string>
+	<string name="order__label_button_plus">+</string>
+	<string name="order__label_button_minus">-</string>
+	<string name="order__label_submit">Submit Order</string>
+</resources>
